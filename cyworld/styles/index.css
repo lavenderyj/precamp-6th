@@ -1,0 +1,31 @@
+* {
+    margin: 0px;
+    box-sizing: border-box;
+}
+.background {
+    background-image: url("../images/background.png");
+    width: 1024px;
+    height: 600px;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+.outerbox {
+    background-image: url('../images/outerbox.png');
+    width: 808px;
+    height: 544px;
+}
+.wrapper {
+    display: flex;
+    padding-left: 32px;
+    padding-top: 32px;
+}
+.wrapper__left {
+    width: 208px;
+    height: 472px;
+    background-color: skyblue;
+}
+.wrapper__right {
+    width: 524px;
+    height: 472px;
+    background-color: green;
+}

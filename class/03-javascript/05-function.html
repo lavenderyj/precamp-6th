@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title>함수실무예제</title>
+    <script>
+        function auth() {
+            const token = String(Math.floor(Math.random() * 1000000)).padStart(6, "0")
+            document.getElementById("fff").innerText = token
+
+            function done() {
+                let ttt = 10
+                const setInterval(() => {
+                    if(ttt >= 0) {
+                        ttt = ttt - 1
+                    }
+                }, 1000)
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div id="fff">000000</div>
+    <button onclick="auth">인증번호 전송</button>
+
+    <div id="ttt">10</div>
+    <button onclick="done">인증 완료</button>
+</body>
+
+</html>
